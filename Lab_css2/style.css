@@ -12,3 +12,27 @@
     background-color: lightblue;
     margin: 10px;
 } */
+
+header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.left { grid-area: left; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+.grid-container {
+display: grid;
+grid-template-areas:
+'header header header header header header'
+'menu main main main main main'
+'......' //เติมตรงแถวนี้
+'......'; //เติมตรงแถวนี้
+gap: 10px;
+background-color: red;
+padding: 10px;
+}
+.grid-container > div {
+background-color: #f0f0f0;
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
