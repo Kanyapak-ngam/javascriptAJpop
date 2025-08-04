@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Validate Thai Date</title>
+  <script src="buddate.js" defer></script>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input {
+      font-size: 24px;
+      width: 80px;
+      padding: 8px;
+      margin: 10px;
+      text-align: center;
+    }
+    button {
+      font-size: 24px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input id="day" type="text" placeholder="วัน">
+    <input id="month" type="text" placeholder="เดือน">
+    <input id="year" type="text" placeholder="พ.ศ."><br>
+    <button onclick="validateDate()">validate</button>
+  </div>
+</body>
+</html>

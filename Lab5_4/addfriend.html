@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Friend</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    #friend-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .friend-tag {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .friend-tag span {
+      margin-right: 8px;
+    }
+
+    .remove-btn {
+      background: none;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      color: #f44336;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+    button {
+      padding: 8px 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #friend-count {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Lab 1.3 - Add Friend</h2>
+
+  <input type="text" id="friend-input" placeholder="Enter friend's name" />
+  <button onclick="addFriend()">ADD</button>
+
+  <div id="friend-list"></div>
+  <div id="friend-count">Total friends: 0</div>
+
+  <script src="AddFriend.js"></script>
+</body>
+</html>
